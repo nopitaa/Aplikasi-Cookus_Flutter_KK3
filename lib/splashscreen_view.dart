@@ -18,7 +18,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   }
 
     startSplashScreen() async {
-    var duration = const Duration(seconds: 3);
+    var duration = const Duration(seconds: 5);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) {
@@ -36,10 +36,6 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
       height: 844,
       decoration: BoxDecoration(
           borderRadius : BorderRadius.only(
-            topLeft: Radius.circular(25),
-            topRight: Radius.circular(25),
-            bottomLeft: Radius.circular(25),
-            bottomRight: Radius.circular(25),
           ),
       gradient : LinearGradient(
           begin: Alignment(-0.30106812715530396,0.7442885041236877),

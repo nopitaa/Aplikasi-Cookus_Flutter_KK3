@@ -1,166 +1,273 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import 'package:aplikasi_cookus/constants.dart';
 import 'package:aplikasi_cookus/screens/register_view.dart';
+import 'package:aplikasi_cookus/screens/login_view.dart';
+import 'package:aplikasi_cookus/screens/dashboard_view.dart';
+
 
 class LoginPage extends StatelessWidget {
-    static const routeName = "/loginPage";
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: ColorPalette.primaryColor,
-        padding: EdgeInsets.all(20.0),
-        child: ListView(
-          children: <Widget>[
-            Center(
-              child: Column(
-                children: <Widget>[
-                  _iconLogin(),
-                  _titleDescription(),
-                  _textField(),
-                  _buildButton(context),
-                ],
-              ),
-            ),
-          ],
+      static const routeName = "/loginPage";
+
+          @override
+          Widget build(BuildContext context) {
+          // Figma Flutter Generator LoginWidget - FRAME
+            return Container(
+      width: 390,
+      height: 844,
+      decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+          ),
+      gradient : LinearGradient(
+          begin: Alignment(-0.30106812715530396,0.7442885041236877),
+          end: Alignment(-0.7442885041236877,-1.4100043773651123),
+          colors: [Color.fromRGBO(249, 135, 135, 1),Color.fromRGBO(255, 255, 255, 1)]
         ),
+  ),
+      child: Stack(
+        children: <Widget>[
+          Positioned(
+        top: 275,
+        left: 21,
+        child: Container(
+        width: 347,
+        height: 54,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+
+          ),
+      color : Color.fromRGBO(246, 236, 236, 1),
+  )
+      )
+      ),Positioned(
+        top: 474,
+        left: 21,
+        child: Container(
+        width: 347,
+        height: 54,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
+          ),
+      color : Color.fromRGBO(255, 255, 255, 1),
+  )
+      )
+      ),Positioned(
+        top: 474,
+        left: 21,
+        child: Container(
+        width: 347,
+        height: 54,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
+          ),
+      color : Color.fromRGBO(255, 255, 255, 1),
+  )
+      )
+      ),Positioned(
+        top: 351,
+        left: 21,
+        child: Container(
+        width: 347,
+        height: 54,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
+          ),
+      color : Color.fromRGBO(246, 236, 236, 1),
+  )
+      )
+      ), Row(
+         children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(top: 164, left: 15),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+            
+            ],
+          ),
+        )
+      ],
+    ),
+      Positioned(
+        top: 293,
+        left: 45,
+        child: Text('Email', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(0, 0, 0, 0.30000001192092896),
+        fontFamily: 'Inter',
+        fontSize: 15,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ),)
+      ),Positioned(
+        top: 369,
+        left: 45,
+        child: Text('Password', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(0, 0, 0, 0.30000001192092896),
+        fontFamily: 'Inter',
+        fontSize: 15,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ),)
+      ),  Row(
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(top: 488, left: 160),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+      TextButton(
+        child: Text('Masuk', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(255, 136, 136, 1),
+        fontFamily: 'Inter',
+        fontSize: 15,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
       ),
-    );
-  }
-
-  Widget _iconLogin() {
-    return Image.asset(
-              "images/icon_login.png",
-              width: 150.0,
-              height: 150.0,
-            );
-  }
-
-  Widget _titleDescription() {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        Text(
-          "Login into app",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 16.0,
+      
+      onPressed: () {
+            Navigator.pushNamed(context, Dashboard.routeName);
+          },
+      ),
+            ],
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        Text(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt ante lacus, eu pretium purus vulputate sit amet.",
-          style: TextStyle(
-            fontSize: 12.0,
-            color: Colors.white,
-          ),
-          textAlign: TextAlign.center,
-        ),
+        )
       ],
-    );
-  }
-
-  Widget _textField() {
-    return Column(
-      children: <Widget>[
+    ),Row(
+      children: <Widget >[
         Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        TextFormField(
-          decoration: const InputDecoration(
-            border: UnderlineInputBorder(),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
-                width: 1.5,
-              ),
-            ),
-            focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.white,
-                width: 3.0,
-              ),
-            ),
-            hintText: "Username",
-            hintStyle: TextStyle(color: ColorPalette.hintColor),
+          padding: const EdgeInsets.only(top: 164, left: 15),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+      TextButton(
+      child: Text('Selamat Datang di', style: TextStyle(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        fontFamily: 'Inter',
+        fontSize: 15,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
+      ),
+      
+      onPressed: () {
+            Navigator.pushNamed(context, LoginPage.routeName);
+          },
+      ),
+            ],
           ),
-          style: TextStyle(color: Colors.white),
-          autofocus: false,
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        TextFormField(
-          decoration: const InputDecoration(
-            border: UnderlineInputBorder(),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
-                width: 1.5,
-              ),
-            ),
-            focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.white,
-                width: 3.0,
-              ),
-            ),
-            hintText: "Password",
-            hintStyle: TextStyle(color: ColorPalette.hintColor),
-          ),
-          style: TextStyle(color: Colors.white),
-          obscureText: true,
-          autofocus: false,
-        ),
+        )
       ],
-    );
-  }
-
-  Widget _buildButton(BuildContext context) {
-    return Column(
+    ),Row(
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        InkWell(
-          child: Container(
-            padding: EdgeInsets.symmetric(vertical: 8.0),
-            width: double.infinity,
-            child: Text(
-              'Login',
-              style: TextStyle(color: ColorPalette.primaryColor),
-              textAlign: TextAlign.center,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(30.0),
-            ),
+          padding: const EdgeInsets.only(top: 188, left: 13),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+      TextButton(
+        child: Text('Cookus', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        fontFamily: 'Inter',
+        fontSize: 45,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
+      ),
+      
+      onPressed: () {
+            Navigator.pushNamed(context, LoginPage.routeName);
+          },
+      ),
+            ],
           ),
-        ),
+        )
+      ],
+    ),Positioned(
+        top: 425,
+        left: 292,
+        child: Divider(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        thickness: 1
+      )
+      
+      ),Positioned(
+        top: 551,
+        left: 220,
+        child: Transform.rotate(
+        angle: 1.4033419209422001e-14 * (math.pi / 180),
+        child: Divider(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        thickness: 1
+      )
+      ,
+      )
+      ),
+Row(
+      children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        Text(
-          'or',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 12.0,
-          ),
-        ),
-        TextButton(
-          child: Text(
-            'Register',
-            style: TextStyle(color: Colors.white),
-          ),
-          onPressed: () {
+          padding: const EdgeInsets.only(top: 534, left: 90),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+      TextButton(
+        child: Text('Belum punya akun ? Daftar Sekarang', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        fontFamily: 'Inter',
+        fontSize: 12,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
+      ),
+      
+      onPressed: () {
             Navigator.pushNamed(context, RegisterPage.routeName);
           },
-        ),
+      ),
+            ],
+          ),
+        )
       ],
+    ),Positioned(
+        top: 26,
+        left: 295,
+        child: Container(
+        width: 73,
+        height: 27,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('images/logo.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      )
+        ]
+      )
     );
-  }
-}
+          }
+          
+        }
+        
+        
