@@ -1,193 +1,221 @@
 import 'package:flutter/material.dart';
 import 'package:aplikasi_cookus/constants.dart';
 import 'package:aplikasi_cookus/screens/login_view.dart';
+import 'package:aplikasi_cookus/screens/dashboard_view.dart';
 
 class RegisterPage extends StatelessWidget {
+      static const routeName = "/RegisterPage";
 
-  static const routeName = "/registerPage";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: ColorPalette.primaryColor,
-        padding: EdgeInsets.all(20.0),
-        child: ListView(
-          children: <Widget>[
-            Center(
-              child: Column(
-                children: <Widget>[
-                  _iconRegister(),
-                  _titleDescription(),
-                  _textField(),
-                  _buildButton(context),
-                ],
-              ),
-            ),
-          ],
+          @override
+          Widget build(BuildContext context) {
+          // Figma Flutter Generator LoginWidget - FRAME
+            return Scaffold(
+          body : Container(
+      width: 390,
+      height: 844,
+      decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+          ),
+      gradient : LinearGradient(
+          begin: Alignment(-0.30106812715530396,0.7442885041236877),
+          end: Alignment(-0.7442885041236877,-1.4100043773651123),
+          colors: [Color.fromRGBO(249, 135, 135, 1),Color.fromRGBO(255, 255, 255, 1)]
         ),
+  ),
+      child: Stack(
+        children: <Widget>[
+           Padding(
+          padding: const EdgeInsets.only(top: 200, left: 24, right: 24),
+          child: Center(
+            child: Column(
+              children: [
+                SizedBox(height: 1),
+                Column(
+                  children: [
+                    TextFormField(
+                      decoration: InputDecoration(
+                        fillColor: Color(0xffF1F0F5),
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        labelText: 'Nama Lengkap',
+                              labelStyle: TextStyle(
+                          color:  Color.fromRGBO(249, 135, 135, 1)
+                        )
+                      ),
+                    ), SizedBox(height: 20),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        fillColor: Color(0xffF1F0F5),
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        labelText: 'Username',
+                        labelStyle: TextStyle(
+                          color:  Color.fromRGBO(249, 135, 135, 1)
+                        )
+                      ),
+                    ),SizedBox(height: 20),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        fillColor: Color(0xffF1F0F5),
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        labelText: 'Email',
+                        labelStyle: TextStyle(
+                          color:  Color.fromRGBO(249, 135, 135, 1)
+                        )
+                      ),
+                    ),SizedBox(height: 20),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        fillColor: Color(0xffF1F0F5),
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        labelText: 'Password',
+                        labelStyle: TextStyle(
+                          color:  Color.fromRGBO(249, 135, 135, 1)
+                        )
+                      ),
+                    ),SizedBox(height: 20),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        fillColor: Color(0xffF1F0F5),
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        labelText: 'Ulangi Password',
+                        labelStyle: TextStyle(
+                          color:  Color.fromRGBO(249, 135, 135, 1)
+                        )
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+        top: 590,
+        left: 21,
+        child: Container(
+        width: 347,
+        height: 54,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
+          ),
+      color : Color.fromRGBO(255, 255, 255, 1),
+  )
+      )
+      ), Row(
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(top: 600, left: 160),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children:
+          <Widget>[
+      TextButton(
+        child: Text('Daftar', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(255, 136, 136, 1),
+        fontFamily: 'Inter',
+        fontSize: 15,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
       ),
-    );
-  }
-
-  Widget _iconRegister() {
-    return Image.asset(
-              "images/icon_register.png",
-              width: 150.0,
-              height: 150.0,
-            );
-  }
-
-  Widget _titleDescription() {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        Text(
-          "Registration",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 16.0,
+      
+      onPressed: () {
+            Navigator.pushNamed(context, Dashboard.routeName);
+          },
+      ),
+            ],
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        Text(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt ante lacus, eu pretium purus vulputate sit amet.",
-          style: TextStyle(
-            fontSize: 12.0,
-            color: Colors.white,
-          ),
-          textAlign: TextAlign.center,
-        ),
+        )
       ],
-    );
-  }
-
-  Widget _textField() {
-    return Column(
+    ),Row(
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        TextFormField(
-          decoration: const InputDecoration(
-            border: UnderlineInputBorder(),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
-                width: 1.5,
-              ),
-            ),
-            focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.white,
-                width: 3.0,
-              ),
-            ),
-            hintText: "Username",
-            hintStyle: TextStyle(color: ColorPalette.hintColor),
-          ),
-          style: TextStyle(color: Colors.white),
-          autofocus: false,
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        TextFormField(
-          decoration: const InputDecoration(
-            border: UnderlineInputBorder(),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
-                width: 1.5,
-              ),
-            ),
-            focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.white,
-                width: 3.0,
-              ),
-            ),
-            hintText: "Password",
-            hintStyle: TextStyle(color: ColorPalette.hintColor),
-          ),
-          style: TextStyle(color: Colors.white),
-          obscureText: true,
-          autofocus: false,
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 12.0),
-        ),
-        TextFormField(
-          decoration: const InputDecoration(
-            border: UnderlineInputBorder(),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
-                width: 1.5,
-              ),
-            ),
-            focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.white,
-                width: 3.0,
-              ),
-            ),
-            hintText: "Confirm Password",
-            hintStyle: TextStyle(color: ColorPalette.hintColor),
-          ),
-          style: TextStyle(color: Colors.white),
-          obscureText: true,
-          autofocus: false,
-        ),
-      ],
-    );
-  }
-
-  Widget _buildButton(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        InkWell(
-          child: Container(
-            padding: EdgeInsets.symmetric(vertical: 8.0),
-            width: double.infinity,
-            child: Text(
-              'Register',
-              style: TextStyle(color: ColorPalette.primaryColor),
-              textAlign: TextAlign.center,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(30.0),
-            ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 16.0),
-        ),
-        Text(
-          'or',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 12.0,
-          ),
-        ),
-        TextButton(
-          child: Text(
-            'Login',
-            style: TextStyle(color: Colors.white),
-          ),
-          onPressed: () {
+          padding: const EdgeInsets.only(top: 120, left: 13),
+          child: Column(
+            /// Add this
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+      TextButton(
+        child: Text('Daftar Atas', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(255, 255, 255, 1),
+        fontFamily: 'Inter',
+        fontSize: 45,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ), 
+      ),
+      
+      onPressed: () {
             Navigator.pushNamed(context, LoginPage.routeName);
           },
-        ),
+      ),
+            ],
+          ),
+        )
       ],
-    );
-  }
-}
+    ),
+Positioned(
+        top: 26,
+        left: 295,
+        child: Container(
+        width: 73,
+        height: 27,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('images/logo.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      )
+        ]
+      )
+    ));
+          }
+          
+        }

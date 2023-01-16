@@ -7,7 +7,8 @@ class Dashboard extends StatelessWidget {
           @override
           Widget build(BuildContext context) {
           // Figma Flutter Generator MyberandaWidget - FRAME
-            return Container(
+            return Scaffold(
+          body : Container(
       width: 390,
       height: 844,
       decoration: BoxDecoration(
@@ -1467,7 +1468,7 @@ class Dashboard extends StatelessWidget {
         height: 35,
         decoration: BoxDecoration(
           image : DecorationImage(
-          image: AssetImage('assets/images/3removebgpreview2.png'),
+          image: AssetImage('images/logo.png'),
           fit: BoxFit.fitWidth
       ),
   )
@@ -1688,7 +1689,7 @@ class Dashboard extends StatelessWidget {
       ),
         ]
       )
-    );
+    )
+            );
           }
-        }
-        
+}
