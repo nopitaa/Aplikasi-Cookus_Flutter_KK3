@@ -86,6 +86,7 @@ class RegisterPage extends StatelessWidget {
                       ),
                     ),SizedBox(height: 20),
                     TextFormField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         fillColor: Color(0xffF1F0F5),
                         filled: true,
@@ -104,6 +105,7 @@ class RegisterPage extends StatelessWidget {
                       ),
                     ),SizedBox(height: 20),
                     TextFormField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         fillColor: Color(0xffF1F0F5),
                         filled: true,
