@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:aplikasi_cookus/constants.dart';
 import 'package:aplikasi_cookus/screens/login_view.dart';
-import 'package:aplikasi_cookus/screens/dashboard_view.dart';
 
 class RegisterPage extends StatelessWidget {
       static const routeName = "/RegisterPage";
@@ -24,7 +23,7 @@ class RegisterPage extends StatelessWidget {
   ),
       child: Stack(
         children: <Widget>[
-           Padding(
+          Padding(
           padding: const EdgeInsets.only(top: 200, left: 24, right: 24),
           child: Center(
             child: Column(
@@ -116,7 +115,7 @@ class RegisterPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                           borderSide: BorderSide(color: Colors.white),
                         ),
-                        labelText: 'Ulangi Password',
+                        labelText: 'Confirm Password',
                         labelStyle: TextStyle(
                           color:  Color.fromRGBO(249, 135, 135, 1)
                         )
@@ -165,32 +164,6 @@ class RegisterPage extends StatelessWidget {
       ),
       
       onPressed: () {
-            Navigator.pushNamed(context, Dashboard.routeName);
-          },
-      ),
-            ],
-          ),
-        )
-      ],
-    ),Row(
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(top: 120, left: 13),
-          child: Column(
-            /// Add this
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-      TextButton(
-        child: Text('Daftar Atas', textAlign: TextAlign.left, style: TextStyle(
-        color: Color.fromRGBO(255, 255, 255, 1),
-        fontFamily: 'Inter',
-        fontSize: 45,
-        fontWeight: FontWeight.normal,
-        height: 1
-      ), 
-      ),
-      
-      onPressed: () {
             Navigator.pushNamed(context, LoginPage.routeName);
           },
       ),
@@ -198,6 +171,25 @@ class RegisterPage extends StatelessWidget {
           ),
         )
       ],
+    ),
+    Positioned(
+      top: 120,
+      left: 27,
+      child: Container(
+        child: Column(children: <Widget>[
+          Text(
+            'Daftar',
+            style: TextStyle(
+                color: Color.fromRGBO(255, 255, 255, 1),
+        fontFamily: 'Inter',
+        fontSize: 45,
+        fontWeight: FontWeight.normal,
+        height: 1
+
+            ),
+          ),
+        ],)
+      )
     ),
 Positioned(
         top: 26,

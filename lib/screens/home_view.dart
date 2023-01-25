@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:aplikasi_cookus/screens/register_view.dart';
 import 'package:aplikasi_cookus/screens/login_view.dart';
 
-
-
 class HomePage extends StatelessWidget {
       static const routeName = "/homePage";
           @override
