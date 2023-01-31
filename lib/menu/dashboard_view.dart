@@ -7,21 +7,11 @@ class MenuCookus extends StatelessWidget {
   Widget build(BuildContext context) {
     // Figma Flutter Generator MyberandaWidget - FRAME
     return Scaffold(
-        body: 
-        ListView(
+        body: ListView(
       children: <Widget>[
         Container(
             width: 390,
-            height: 844,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(25),
-                topRight: Radius.circular(25),
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
-              color: Color.fromRGBO(255, 255, 255, 1),
-            ),
+            height: 900,
             child: Stack(children: <Widget>[
               Positioned(
                   top: 171,
@@ -111,7 +101,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse66.png'),
+                            image: AssetImage('images/telor.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -164,7 +154,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse67.png'),
+                            image: AssetImage('images/wortel.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -197,7 +187,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse71.png'),
+                            image: AssetImage('images/tomat.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -229,65 +219,10 @@ class MenuCookus extends StatelessWidget {
                                         blurRadius: 4)
                                   ],
                                   image: DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/Rectangle4193.png'),
+                                      image: AssetImage('images/rawon.jpg'),
                                       fit: BoxFit.fitWidth),
                                 ))),
                       ]))),
-              Positioned(
-                  top: 408,
-                  left: 210,
-                  child: Text(
-                    'Nasi rames ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 408,
-                  left: 210,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 330,
-                  left: 200,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4196.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
               Positioned(
                   top: 596,
                   left: 14,
@@ -308,8 +243,7 @@ class MenuCookus extends StatelessWidget {
                               blurRadius: 4)
                         ],
                         image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4205.png'),
+                            image: AssetImage('images/sotoayam.png'),
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
@@ -380,8 +314,7 @@ class MenuCookus extends StatelessWidget {
                               blurRadius: 4)
                         ],
                         image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4208.png'),
+                            image: AssetImage('images/rendang.png'),
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
@@ -419,8 +352,7 @@ class MenuCookus extends StatelessWidget {
                               blurRadius: 4)
                         ],
                         image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4201.png'),
+                            image: AssetImage('images/ayamgoreng.png'),
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
@@ -491,8 +423,7 @@ class MenuCookus extends StatelessWidget {
                               blurRadius: 4)
                         ],
                         image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4204.png'),
+                            image: AssetImage('images/ketoprak.png'),
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
@@ -661,21 +592,6 @@ class MenuCookus extends StatelessWidget {
                         ),
                       ))),
               Positioned(
-                  top: 392,
-                  left: 22,
-                  child: Text(
-                    'Rawon',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
                   top: 306,
                   left: 23,
                   child: Text(
@@ -683,21 +599,6 @@ class MenuCookus extends StatelessWidget {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 408,
-                  left: 210,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
                         fontFamily: 'Inter',
                         fontSize: 13,
                         letterSpacing:
@@ -730,21 +631,6 @@ class MenuCookus extends StatelessWidget {
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
-                  top: 408,
-                  left: 210,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
                   top: 330,
                   left: 200,
                   child: Container(
@@ -764,366 +650,105 @@ class MenuCookus extends StatelessWidget {
                               blurRadius: 4)
                         ],
                         image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4213.png'),
+                            image: AssetImage('images/nasiramesayam.png'),
                             fit: BoxFit.fitWidth),
                       ))),
+              Positioned(
+                  top: 754,
+                  left: 14,
+                  child: Container(
+                      width: 175,
+                      height: 98,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(5),
+                          topRight: Radius.circular(5),
+                          bottomLeft: Radius.circular(5),
+                          bottomRight: Radius.circular(5),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromRGBO(0, 0, 0, 0.25),
+                              offset: Offset(0, 4),
+                              blurRadius: 4)
+                        ],
+                        image: DecorationImage(
+                            image: AssetImage('images/ramesayam.png'),
+                            fit: BoxFit.fitWidth),
+                      ))),
+              Positioned(
+                  top: 754,
+                  left: 203,
+                  child: Container(
+                      width: 175,
+                      height: 98,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(5),
+                          topRight: Radius.circular(5),
+                          bottomLeft: Radius.circular(5),
+                          bottomRight: Radius.circular(5),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromRGBO(0, 0, 0, 0.25),
+                              offset: Offset(0, 4),
+                              blurRadius: 4)
+                        ],
+                        image: DecorationImage(
+                            image: AssetImage('images/nasicampur.png'),
+                            fit: BoxFit.fitWidth),
+                      ))),
+              Positioned(
+                  top: 832,
+                  left: 23,
+                  child: Text(
+                    ' Rames Ayam',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                        fontFamily: 'Inter',
+                        fontSize: 13,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  )),
+              Positioned(
+                  top: 832,
+                  left: 213,
+                  child: Text(
+                    ' Nasi Cmpur Sate Lilit',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                        fontFamily: 'Inter',
+                        fontSize: 13,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  )),
               Positioned(
                   top: 408,
-                  left: 210,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 330,
-                  left: 200,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4214.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 24,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 14,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4215.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 24,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 14,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4216.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 24,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 14,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4217.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 24,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 14,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4218.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 213,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 203,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4219.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 213,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 203,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4220.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 213,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 203,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4221.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 832,
-                  left: 213,
-                  child: Text(
-                    ' ayam',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        fontFamily: 'Inter',
-                        fontSize: 13,
-                        letterSpacing:
-                            0 /*percentages not used in flutter. defaulting to zero*/,
-                        fontWeight: FontWeight.normal,
-                        height: 1),
-                  )),
-              Positioned(
-                  top: 754,
-                  left: 203,
-                  child: Container(
-                      width: 175,
-                      height: 98,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0, 4),
-                              blurRadius: 4)
-                        ],
-                        image: DecorationImage(
-                            image:
-                                AssetImage('assets/images/Rectangle4222.png'),
-                            fit: BoxFit.fitWidth),
-                      ))),
-              Positioned(
-                  top: 392,
                   left: 22,
                   child: Text(
                     'Rawon',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                        fontFamily: 'Inter',
+                        fontSize: 13,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  )),
+              Positioned(
+                  top: 408,
+                  left: 210,
+                  child: Text(
+                    'Nasi rames ayam',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(255, 255, 255, 1),
@@ -1186,32 +811,6 @@ class MenuCookus extends StatelessWidget {
                       width: 320,
                       height: 45,
                       child: Stack(children: <Widget>[
-                        Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Container(
-                                width: 320,
-                                height: 45,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10),
-                                    bottomLeft: Radius.circular(10),
-                                    bottomRight: Radius.circular(10),
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Color.fromRGBO(
-                                            0, 0, 0, 0.07999999821186066),
-                                        offset: Offset(0, 5),
-                                        blurRadius: 20)
-                                  ],
-                                  color: Color.fromRGBO(255, 255, 255, 1),
-                                  border: Border.all(
-                                    color: Color.fromRGBO(180, 194, 211, 1),
-                                    width: 0.5,
-                                  ),
-                                ))),
                         Positioned(
                             top: 15,
                             left: 285,
@@ -1290,15 +889,6 @@ class MenuCookus extends StatelessWidget {
                         height: 1),
                   )),
               Positioned(
-                  top: 791,
-                  left: 4,
-                  child: Container(
-                      width: 390,
-                      height: 54,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                      ))),
-              Positioned(
                   top: 798,
                   left: -2,
                   child: Divider(
@@ -1311,7 +901,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse75.png'),
+                            image: AssetImage('images/kangkung.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -1339,29 +929,16 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse69.png'),
+                            image: AssetImage('images/ayam.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
                       ))),
               Positioned(
-                  top: 250,
-                  left: 97,
-                  child: Container(
-                      width: 13,
-                      height: 13,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse68.png'),
-                            fit: BoxFit.fitWidth),
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(13, 13)),
-                      ))),
-              Positioned(
-                  top: 252,
-                  left: 181,
+                  top: 225,
+                  left: 252,
                   child: Text(
-                    'Terong',
+                    'Ayam',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
@@ -1373,10 +950,36 @@ class MenuCookus extends StatelessWidget {
                         height: 1),
                   )),
               Positioned(
-                  top: 225,
-                  left: 252,
+                  top: 250,
+                  left: 97,
+                  child: Container(
+                      width: 13,
+                      height: 13,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/kentang.png'),
+                            fit: BoxFit.fitWidth),
+                        borderRadius:
+                            BorderRadius.all(Radius.elliptical(13, 13)),
+                      ))),
+              Positioned(
+                  top: 250,
+                  left: 165,
+                  child: Container(
+                      width: 13,
+                      height: 13,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/terong.png'),
+                            fit: BoxFit.fitWidth),
+                        borderRadius:
+                            BorderRadius.all(Radius.elliptical(13, 13)),
+                      ))),
+              Positioned(
+                  top: 252,
+                  left: 181,
                   child: Text(
-                    'Ayam',
+                    'Terong',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
@@ -1410,7 +1013,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse72.png'),
+                            image: AssetImage('images/kubis.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -1423,7 +1026,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse73.png'),
+                            image: AssetImage('images/bayam.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
@@ -1466,7 +1069,7 @@ class MenuCookus extends StatelessWidget {
                       height: 13,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/Ellipse75.png'),
+                            image: AssetImage('images/timun.png'),
                             fit: BoxFit.fitWidth),
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(13, 13)),
