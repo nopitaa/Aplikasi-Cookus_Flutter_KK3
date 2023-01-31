@@ -12,6 +12,6 @@ class Create extends StatefulWidget {
 class _CreateState extends State<Create> {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("createpage"),);
+    return Container(child: Text("halaman create"),);
   }
 }
